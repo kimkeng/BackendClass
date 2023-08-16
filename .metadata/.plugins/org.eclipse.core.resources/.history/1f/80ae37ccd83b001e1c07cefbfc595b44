@@ -1,0 +1,10 @@
+package io;
+// I/O 파일 데이터 읽어 오기
+public class file2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

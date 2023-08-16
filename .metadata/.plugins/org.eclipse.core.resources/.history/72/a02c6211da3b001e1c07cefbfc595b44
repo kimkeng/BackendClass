@@ -1,0 +1,33 @@
+package io;
+
+import java.io.FileReader;
+
+// I/O 파일 데이터 읽어 오기
+public class file2 {
+
+	public static void main(String[] args) {
+		try {
+			data1 d = new data1();
+			d.aaa();
+		}catch(Exception e){
+			System.out.println(e);
+		}
+	}
+
+}
+
+class data1{
+	public void aaa() throws Exception {
+		FileReader fr = new FileReader("E:\\project\\web\\src\\main\\webapp\\data.txt");
+		System.out.println(fr.getEncoding());
+		
+		while(true) {	//무한loop
+			int m = fr.read();
+			System.out.println(m);
+			if(m == -1){
+				break;
+			}
+			
+		}
+	}
+}

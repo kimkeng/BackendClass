@@ -1,0 +1,19 @@
+package io;
+//파일쓰기 (write)
+
+public class file {
+
+	public static void main(String[] args) {
+		try {
+			
+		}catch(Exception e) {
+			System.out.println("파일오류 발생");
+		}
+	}
+
+}
+class data3{
+	public void abc() throws Exception{
+		
+	}
+}

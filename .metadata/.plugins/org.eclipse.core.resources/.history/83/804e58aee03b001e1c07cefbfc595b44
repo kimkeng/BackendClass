@@ -1,0 +1,11 @@
+package io;
+//파일쓰기
+
+public class file {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+class

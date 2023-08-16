@@ -1,0 +1,34 @@
+package io;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+// IOException + Exception + finally
+public class file3 {
+
+	public static void main(String[] args) {
+		try {
+			data2 dt = new data2();
+			String url = "E:\\project\\web\\src\\main\\webapp\\data.txt";
+			dt.abc(url);
+		}catch(Exception e){
+			System.out.println(e);
+		}
+		finally {	//임시방편
+			
+		}
+	}
+
+}
+
+class data2{
+	FileReader fr = null;
+	
+	public void abc(String filename) throws Exception, IOException {
+		this.fr = new FileReader(filename);
+		System.out.println(this.fr.read());
+		System.out.println(this.fr.read());
+		System.out.println(this.fr.read());
+
+	}
+}

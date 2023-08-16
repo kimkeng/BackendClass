@@ -1,0 +1,14 @@
+package io;
+// IOException + Exception + finally
+public class file3 {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+class data2{
+	public void abc() {
+		
+	}
+}

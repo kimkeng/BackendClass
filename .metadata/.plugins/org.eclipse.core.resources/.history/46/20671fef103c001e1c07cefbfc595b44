@@ -1,0 +1,26 @@
+package io;
+
+import java.io.InputStream;
+import java.io.OutputStream;
+
+//InputStream + OutputStream + flush 사용법 (메모리)
+public class file10 {
+
+	public static void main(String[] args) throws Exception {
+		InputStream in = System.in;	//값을 적용
+		OutputStream os = System.out;	//출력
+		
+		int a = in.read();	//입력된 사항을 읽어들임
+		os.write(a);	//쓰기
+		os.flush();
+		os.close();	//OutputStream닫기
+		in.close();	//InmputStream닫기
+		InputStream in2 = System.in;
+		OutputStream os2 = System.out;
+		int a2 = in2.read();
+		os2.flush();
+		os2.write(a);
+		os2.close();
+	}
+
+}

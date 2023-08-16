@@ -1,0 +1,25 @@
+package io;
+
+import java.io.IOException;
+
+// IOException + Exception + finally
+public class file3 {
+
+	public static void main(String[] args) {
+		try {
+			
+		}catch(Exception e){
+			
+		}
+		finally {	//임시방편
+			
+		}
+	}
+
+}
+
+class data2{
+	public void abc(String filename) throws Exception, IOException {
+		
+	}
+}
