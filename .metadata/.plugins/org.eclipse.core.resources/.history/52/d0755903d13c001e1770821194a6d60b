@@ -1,0 +1,18 @@
+package io;
+
+public class file17 {
+
+	public static void main(String[] args) {
+		try {
+			new data15().abc();
+		}catch(Exception e) {
+			
+		}
+	}
+
+}
+class data15{
+	public void abc() throws Exception {
+		
+	}
+}

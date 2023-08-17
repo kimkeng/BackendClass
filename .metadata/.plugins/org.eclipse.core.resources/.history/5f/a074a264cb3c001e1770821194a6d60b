@@ -1,0 +1,30 @@
+package io;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+
+//InputStreamReader, OutputStreamWriter(바이너리를 아스키로), BufferedReader, BufferedWriter
+public class file16 {
+
+	public static void main(String[] args) {
+		try {
+			new data14().abc();
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+}
+
+class data14{
+	//InputStreamReader : Stream => Reader 변환
+	public void abc()throws Exception{
+		String file = "E:\\project\\web\\src\\main\\webapp\\number.txt";	//이미지는 바이너리
+		InputStream is = new FileInputStream(file);
+		InputStreamReader ir = new InputStreamReader(is);
+		
+		
+	}
+}

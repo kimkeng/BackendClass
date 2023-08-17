@@ -1,0 +1,14 @@
+package io;
+
+public class file17 {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+class data15{
+	public void abc() {
+		
+	}
+}

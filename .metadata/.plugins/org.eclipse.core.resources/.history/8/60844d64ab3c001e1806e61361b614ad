@@ -1,0 +1,47 @@
+package io;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+//이미지 파일 처리 (Stream) 
+//이미지는 바이너리니까 무조건 Stream을 써야함
+public class file13 {
+
+	public static void main(String[] args) {
+		try {
+			data11 d = new data11();
+			d.abc();
+		}catch(Exception e) {
+			
+		}
+	}
+
+}
+class data11{
+	public void abc() throws Exception {
+		InputStream is = new FileInputStream("E:\\project\\web\\src\\main\\webapp\\aaaa.jpg");
+		//System.out.println(is.available());
+		/*
+		byte[] file = new byte[is.available()];
+		int b = is.read(file);
+		*/
+		//System.out.println(b);
+		OutputStream os = new FileOutputStream("src\\main\\webapp\\aaaa4.jpg");
+		//os.write(file);
+		
+		//%로 확인
+		byte[] file = new byte[is.available()/100];
+		int img = 0;	//읽어 들이는 byte수
+		int checㅏ = 0;	//읽는 횟수
+		while(true) {
+			img = is.read(file);
+			if(img == -1) {
+				break;
+			}else {
+				os.write(file,0,img);
+			}
+		}
+	}
+}

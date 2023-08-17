@@ -1,0 +1,37 @@
+package io;
+
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.util.Arrays;
+//BufferedInputStream, BufferedOutputStream
+public class file17 {
+	
+	public static void main(String[] args) {
+		try {
+			new data13().abc();
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+}
+class data13{
+
+	public void abc() throws Exception {
+		String file = "E:\\project\\web\\src\\main\\webapp\\test\\aaaa5.jpg";
+		
+		InputStream is = new FileInputStream(file);
+		//FileInputStream fs = new FileInputStream(file);
+		
+		BufferedInputStream bi = new BufferedInputStream(is);
+		byte filesize[] = new byte[bi.available()];
+		int total = bi.read(filesize);
+		
+		if(total>10000) {
+			System.out.println("이미지 제한 용량을 초과합니다.");
+		}
+		
+		
+		//System.out.println(Arrays.toString(filesize));
+	}
+}

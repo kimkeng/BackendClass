@@ -1,0 +1,31 @@
+package io;
+
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.util.Arrays;
+
+import org.apache.coyote.http11.filters.BufferedInputFilter;
+//BufferedInputStream, BufferedOutputStream
+public class file17 {
+	
+	public static void main(String[] args) {
+		try {
+			new data13().abc();
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+}
+class data13{
+
+	public void abc() throws Exception {
+		String file = "E:\\project\\web\\src\\main\\webapp\\test\\aaaa5.jpg";
+		FileInputStream fs = new FileInputStream(file);
+		//FileInputStream fs = new FileInputStream(file);
+		BufferedInputStream bi = new BufferedInputStream(is);
+		byte filesize[] = new byte[bi.available()];
+				
+		System.out.println(filesize);
+	}
+}

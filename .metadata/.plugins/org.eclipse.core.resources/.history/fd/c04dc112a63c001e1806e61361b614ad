@@ -1,0 +1,27 @@
+package io;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+//파일 복사 및 이동
+public class file12 {
+
+	public static void main(String[] args) {
+		try {
+			data10 d = new data10();
+			d.abc();
+		}catch(Exception e) {
+			System.out.println("파일 복사 및 이동 코드 오류발생!!!!!");
+		}
+	}
+
+}
+class data10 {
+	public void abc() throws Exception {
+		/*
+		 createDirectories : 해당 디렉토리를 생성하는 메소드 입니다.
+		 Paths : 경로
+		 */
+		Files.createDirectories(Paths.get("E:\\project\\web\\src\\main\\webapp\\test"));
+	}
+}

@@ -1,0 +1,31 @@
+package io;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+
+//Stream으로 파일로드 하는 방식
+public class file11 {
+
+	public static void main(String[] args) {
+		try {
+			new data8().abc();
+		}catch(Exception e) {
+			System.out.println("소스 코드 및 경로 시실패!!");
+		}
+	}
+
+}
+
+class data8{
+	public void abc() throws Exception {
+		InputStream is = new FileInputStream("E:\\project\\web\\src\\main\\webapp\\datalist.txt");
+		//System.out.println(is.available());	//available() : 파일의 용량 크기
+		byte temp[] = new byte[is.available()]; // 용량상관없이 모두 temp에 파일을 쏟아부어라
+		//byte temp[] = new byte[1024*10]; // 1024byte == 1kilobate, [1024*10] = 10kilobyte, [1024*1024*1] = 1MegaByte
+		int ea = is.read(temp);
+		System.out.println(ea);
+		
+		//String data = new String(temp);
+		//System.out.println(data);
+	}
+}

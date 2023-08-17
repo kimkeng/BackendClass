@@ -1,0 +1,16 @@
+package io;
+
+import io.file17.data13;
+
+public class file15 {
+	try {
+		new data13().abc();
+	}catch(Exception e) {
+		System.out.println(e);
+	}
+}
+class data16{
+	public void abc() {
+		
+	}
+}

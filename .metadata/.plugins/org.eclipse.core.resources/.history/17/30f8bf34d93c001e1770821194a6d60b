@@ -1,0 +1,36 @@
+package web;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
+//파일 업로드 기능
+@MultipartConfig(
+		//업로드한 파일의 크기를 측정 단, 첨부파일 크기보다 클 경우 temp 디렉토리 저장
+		fileSizeThreshold = 1024 * 1024 * 1, //1MB
+		maxFileSize = 1024 * 1024 + 10, //10MB
+)
+
+public class file extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+    public file() {
+        super();
+    }
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8");
+		response.setContentType("text/html;charset=utf-8");
+		//getServletContext().getRealPath() => WEB SERVER의 프로젝트 경로를 말합니다.
+		String url = request.getServletContext().getRealPath("/");
+		//System.out.println(url);
+		Part file1 = request.getPart("imgfile");
+		System.out.println(file1);
+		
+		
+	}
+}

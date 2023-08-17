@@ -1,0 +1,32 @@
+package io;
+
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.util.Arrays;
+//BufferedInputStream, BufferedOutputStream
+public class file17 {
+	
+	public static void main(String[] args) {
+		try {
+			new data13().abc();
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+}
+class data13{
+
+	public void abc() throws Exception {
+		String file = "E:\\project\\web\\src\\main\\webapp\\test\\aaaa5.jpg";
+		
+		InputStream is = new FileInputStream(file);
+		//FileInputStream fs = new FileInputStream(file);
+		
+		BufferedInputStream bi = new BufferedInputStream(is);
+		byte filesize[] = new byte[bi.available()];
+		is.read(filesize);	
+		
+		System.out.println(Arrays.toString(filesize));
+	}
+}
