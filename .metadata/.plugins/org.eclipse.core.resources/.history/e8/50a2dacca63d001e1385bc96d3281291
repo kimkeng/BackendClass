@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>랜덤(기초) random</title>
+<!--
+	실수 < 유리수,무리수 < 정수
+	
+	실수 : 소수점
+	유리수 : 0.1, -0.25, -1, +1
+	무리수 : 파이(3.14....)
+	정수 : -1, +1
+	음의정수 : -1
+	양의정수 : +1
+	Math.ceil : 올림
+	Math.round : 반올림
+	Math.floor : 버림
+-->
+</head>
+<body>
+</body>
+<script>
+	//var no = Math.ceil(Math.random() * 10); //1~10 소수점 무조건 올림
+	var no = Math.floor(Math.random() * 10);
+	console.log(no);
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 - 변수 배열 및 URI 활용법 - js07.html</title>
+</head>
+<body>
+
+</body>
+<script>
+	var a1 = "홍길동";
+	var a2 = "웹사이트";
+	var a3 = "쇼핑몰";
+	var a4 = "회원가입";
+	
+	var f;
+	for(f=1;f<=4;f++){
+		
+	}
+</script>
+</html>

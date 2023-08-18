@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 - 버블링 + 캡쳐링 함수 기초</title>
+</head>
+<body>
+전체선택 : <input type="checkbox"> <br>
+데이터1 : <input type="checkbox>"> <br>
+데이터2 : <input type="checkbox>"> <br>
+데이터3 : <input type="checkbox>"> <br>
+데이터4 : <input type="checkbox>"> <br>
+데이터5 : <input type="checkbox>"> <br>
+</body>
+</html>

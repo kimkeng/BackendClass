@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>URI - A파트</title>
+</head>
+<body>
+	
+고객명 : <span id="uname"></span> <br>
+아이디 : <span id="uid"></span> <br>  
+</body>
+</html>

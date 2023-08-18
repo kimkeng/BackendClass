@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>랜덤(기초) random</title>
+<!--
+	실수 < 유리수 < 정수 <
+	실수 : 소수점
+	유리수 : 0.1, -0.25, -1, +1
+	정수 : -1, +1
+	음의정수 : -1
+	양의정수 : +1
+-->
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 - 버블링+캡쳐링 함수 기초 radio</title>
+</head>
+<body>
+<input type="checkbox" id="all" onclick="agree(this.checked)"> 전체동의<br>
+이메일 약관 <input type="radio" name="a" id="a1">동의함 <input type="radio" name="a" checked>동의 안함 <br>
+서비스 약관 <input type="radio" name="b" id="a2">동의함 <input type="radio" name="b" checked>동의 안함 <br>
+개인정보서비스 약관 <input type="radio" name="c" id="a3">동의함 <input type="radio" name="c" checked>동의 안함 <br>
+
+</body>
+<script>
+	function agree(e){
+		var w = 1;
+		do{
+			
+			w++;
+		}while(w < 3);
+	}
+</script>
+</html>

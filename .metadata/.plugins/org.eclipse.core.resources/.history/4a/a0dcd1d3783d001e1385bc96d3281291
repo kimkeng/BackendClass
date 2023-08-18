@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 - 버블링+캡쳐링 함수 기초 응용편(장바구니)</title>
+</head>
+<body>
+	<input type="checkbox" id="all" onclick="all_ck(this.checked)" > 상품 전체 선택 <br>
+	<input type="checkbox" value="5000" id="a1" onclick="basket(this.value)" > 포도 : 5,000원 <br>
+	<input type="checkbox" value="1000" id="a2" onclick="basket(this.value)" > 사과 : 1,000원 <br>
+	<input type="checkbox" value="8000" id="a3" onclick="basket(this.value)" > 멜론 : 8,000원 <br>
+	<input type="checkbox" value="1200" id="a4" onclick="basket(this.value)" > 체리 : 1,200원 <br>
+	결제하실 금액 <span id="total">0</span>원
+</body>
+<script>
+	//전역변수 (최종결제 변수)
+	var total;
+	
+	//전체선택 함수 (체크부분 숙제 js03,02확인)
+	function all_ck(e){
+		var w = 1;	
+		while(w <= 4){
+			document.getElementById("a"+w).checked = e;
+			w++;
+		}
+	}
+	
+	function basket(v){
+		
+	}
+	
+	
+</script>
+</html>

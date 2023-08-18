@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 - 버블링+캡쳐링 함수 기초 응용편(장바구니)</title>
+</head>
+<body>
+	<input type="checkbox" id="all" onclick="abc()" > 상품 전체 선택
+	<input type="checkbox" id="c1" onclick="bbb()"> 포도 <br>
+	<input type="checkbox" id="c2" onclick="bbb()"> 사과 <br>
+	<input type="checkbox" id="c3" onclick="bbb()"> 멜론 <br>
+	<input type="checkbox" id="c4" onclick="bbb()"> 사과 <br>
+</body>
+<script>
+	function abc(){
+		
+	}
+</script>
+</html>

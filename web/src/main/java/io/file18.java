@@ -1,4 +1,11 @@
 package io;
+
+import java.io.FileWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Scanner;
+
 /*
  	숙제
  Scanner를 이용하여 총 10개의 숫자를 입력합니다.
@@ -10,7 +17,36 @@ package io;
 public class file18 {
 
 	public static void main(String[] args) {
-
+		try {
+			new data().abc();
+		}catch(Exception e) {
+			System.out.println(e);
+		}
 	}
 
+}
+class data {
+	Scanner sc = null;
+	FileWriter fw = null;
+	
+	public void abc() throws Exception {
+		/*
+		Path data4 = Paths.get("E:\\project\\web\\src\\main\\webapp\\data_num.txt");
+		Files.createFile(data4);
+		*/
+		this.sc = new Scanner(System.in);
+		this.fw = new FileWriter("E:\\project\\web\\src\\main\\webapp\\data_num.txt",true);
+		int w = 0;
+		int num = 0;
+		while(w<10) {
+			if(num < 100) {
+				break;				
+			}else {
+				this.fw.write(num + "\n");
+			}
+			w++;
+		}
+		this.fw.close();
+		this.sc.close();
+	}
 }

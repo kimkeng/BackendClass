@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 - 기초함수 + 즉시실행 형태</title>
+</head>
+<body>
+<!--
+	함수 == method
+	일반 함수 : 호출 형태로 실행 되는 함수
+	이벤트 핸들링 함수 : onclick, onchange, onsubmit
+	이벤트 버블링 함수 : 하위에서 상위의 오브젝트에 전달하는 형태(ul > li)
+	버블링 함수 : 동의안함 하나라도 체크가 되어있을 경우, 전체동의 클릭시 체크인 되는상황
+	이벤트 캡쳐링 함수 : 
+	캡쳐링 함수 : 
+	리턴 함수 : 
+-->
+</body>
+</html>

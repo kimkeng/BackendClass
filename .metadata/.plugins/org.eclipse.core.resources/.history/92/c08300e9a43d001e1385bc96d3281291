@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>URI - A파트</title>
+</head>
+<body>
+	
+고객명 : <span id="user"></span> <br>
+아이디 : <span id="idok"></span> <br>
+<input type="checkbox" id="personalInfo" disabled > 개인 정보 3자에 제공(선택) <!--disabled : 수정 권한 막기-->  
+</body>
+<script>
+	var uri = decodeURI(window.location.search);
+	var data1 = uri.split("&personalInfo=");
+	console.log(data1.length);
+	if(data1.length > 1){
+		document.getElementById("personalInfo").checked = true;
+	}
+	var data2 = data1[0].split("&idok=")
+	document.getElementById("idok").innerText = data2[1];
+	var data3 = data2[0].split("?user=")
+	
+</script>
+</html>
