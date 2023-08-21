@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>onclick ~ onchange, submit, click</title>
+</head>
+<body>
+	<form id="f" method="post" action="http://naver.com">
+		
+		<input type="submit" value="클릭" onclick="abc()">	<!-- submi에는 onclick을 쓰지 말고 form태그에 써야함 -->
+	</form>
+</body>
+<input type="button" value="클릭" onclick="bbb()">	<!-- button은 form태그 바깥에서 쓰고 script에 써 줘도 된다 -->
+<script>
+	function abc(){
+		alert("test");
+		return true;
+	}
+	function bbb(){
+		f.submit();
+	}
+</script>
+</html>

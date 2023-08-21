@@ -1,0 +1,9 @@
+package web;
+
+public class split01 {
+
+	public static void main(String[] args) {
+		String test = "어벤져스-홈커밍";
+	}
+
+}

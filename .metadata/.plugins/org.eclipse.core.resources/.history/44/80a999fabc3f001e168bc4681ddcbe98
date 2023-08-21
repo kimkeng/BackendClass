@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>onclick ~ onchange, submit, click</title>
+</head>
+<body>
+	<form method="post" action="http://naver.com">
+		<input type="submit" value="클릭" onclick="abc()">
+		<input type="button" value="클릭">
+	</form>
+</body>
+<script>
+	function abc(){
+		alert("test");
+		return false;
+	}
+</script>
+</html>
