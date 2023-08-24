@@ -1,6 +1,9 @@
 package web;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 
 /*
@@ -18,29 +21,47 @@ public class file03 {
 	public static void main(String[] args) {
 		try {
 			new homework().abc();
-		}catch(Exception e) {
-			
+		}catch(Exception error) {
+			System.out.println(error);
 		}
 	}
-
 }
 class homework {
 	FileReader fr = null;
+	FileWriter fw = null;
 	BufferedReader br = null;
+	BufferedWriter bw = null;
 	ArrayList<String> al = null;
-	public void abc() throws Exception {
-		String url = "E:\\project\\example\\src\\main\\webapp\\buffer.txt";
+	public void abc() throws Exception { //Exception(에러코드)
+		/*
+		Path create_url = Paths.get("C:\\\\Users\\\\Charlie Brown\\\\Desktop\\\\eclipse_project\\\\example\\\\src\\\\main\\\\webapp\\\\cms_db.txt");
+		Files.createFile(create_url);
+		*/
+		String newUrl = "C:\\Users\\Charlie Brown\\Desktop\\eclipse_project\\example\\src\\main\\webapp\\cms_db.txt";
+		String url = "C:\\Users\\Charlie Brown\\Desktop\\eclipse_project\\example\\src\\main\\webapp\\user_tel.txt";
 		this.fr = new FileReader(url);
 		//System.out.println(url);
+		this.fw = new FileWriter(newUrl);
 		this.br = new BufferedReader(this.fr);
-		//System.out.println(br);
+		//System.out.println(this.br);
+		this.bw = new BufferedWriter(this.fw);
 		this.al = new ArrayList<String>();
 		String data = null;
-		int count = 1;
-		while() {
-			
-		
-			this.al.add(data);
+		int sum = 0;
+		while((data = this.br.readLine()) != null) {
+			String newData[] = data.split("[|]");
+			String realData = newData[0]; // + " (" + newData[1] + ")";
+			realData += " (" + newData[1] + ")";
+			System.out.println(realData);
+			this.bw.write(realData + "\n");
+			if(sum==1) {
+				break;
+			}
+			sum++;
 		}
+		this.bw.close();
+		this.br.close();
+		this.fw.close();
+		this.fr.close();
 	}
-}
+};
