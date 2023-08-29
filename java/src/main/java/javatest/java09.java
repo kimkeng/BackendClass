@@ -1,6 +1,5 @@
 package javatest;
 
-import java.sql.Connection;
 import java.util.Scanner;
 
 public class java09 {

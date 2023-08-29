@@ -6,7 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="dbconfig"/>
 		<list key="findhistory">
+			<item value="ContentType"/>
+			<item value="dbconfig"/>
 		</list>
 		<list key="replacehistory">
 		</list>
