@@ -6,17 +6,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
-
     <style>
         .fakeimg {
             height: 200px;
             background: #aaa;
         }
+        .ck-editor__editable{
+			height:500px;
+		}
     </style>
- 	<script src="./board.js"></script>
+ 	<script src="./board.js?v=1"></script>
+ 	<script src="./ckeditor/ckeditor.js"></script>
 </head>
 <body>
 <header class="p-3 bg-dark text-white">
@@ -64,7 +66,7 @@
                     <input type="file" name="bf" id="bf" class="form-control-file border" name="file">
                 </div>
                 <div class="form-group">
-                    <textarea name="bc" id="bc" class="form-control" rows="5"></textarea>
+                    <textarea name="texts" id="bc"></textarea>
                 </div>
                 <button type="button" onclick="bon()" class="btn btn-primary">글쓰기</button>
             </form>
@@ -72,4 +74,9 @@
     </div>
 </div>
 </body>
+<!--ckeditor4(full) 장착 ckeditor5(TS 전용) ckeditor4(JS 전용)-->
+<script>
+	CKEDITOR.replace("texts");
+</script>
+
 </html>

@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="dbconfig"/>
+		<item key="selection" value="Lorem ipsum dolor"/>
 		<list key="findhistory">
+			<item value="Lorem ipsum dolor"/>
 			<item value="ContentType"/>
 			<item value="dbconfig"/>
 		</list>

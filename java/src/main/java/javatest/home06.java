@@ -1,4 +1,7 @@
 package javatest;
+
+import java.util.Scanner;
+
 /*
  숙제.
  추상클래스 +중첩클래스를 이용하여 프로세서를 제작합니다.
@@ -20,20 +23,29 @@ package javatest;
 public class home06 {
 
 	public static void main(String[] args) {
-		 new f_method().f();
+		 new child().f_method();
 	}
 
 }
 abstract class father{
-	public String u_name;
+	public String member1[] = {"홍길동","이순신","유관순","강감찬","장보고","세균맨"};
+	public String lv1[] = {"실버","일반","비"};
+	public abstract void f_method();
 }
-class f_method extends father{
-	public void f(){
-		
-	}class child extends father{
-		
-		public void c() {
-			
+
+class child extends father{
+	Scanner sc = null;
+	@Override
+	public void f_method() {
+		this.sc = new Scanner(System.in);				
+		System.out.println("이름을 검색하여 주세요.");
+		String value = this.sc.nextLine().intern();	
+		if(value==member1[0] || value==member1[1] || value==member1[2] ) {
+			System.out.println(value + "님은 " + lv1[1] + "회원 입니다.");
+		}else if(value==member1[3] || value==member1[4] || value==member1[5]) {
+			System.out.println(value + "님은 " + lv1[0] + "회원 입니다.");
+		}else {
+			System.out.println(value+"님은 "+lv1[2]+"회원 입니다.");
 		}
 	}
 }
