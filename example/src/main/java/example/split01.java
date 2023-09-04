@@ -1,4 +1,4 @@
-package web;
+package example;
 
 import java.util.Arrays;
 // 글자 잘라주기
